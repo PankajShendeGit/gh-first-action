@@ -1,10 +1,13 @@
-name:First Workflow
-on:workflow_dispatch
+name: First Workflow
+
+on: workflow_dispatch
+
 jobs:
   first-job:
-    runs-on:ubuntu-latest
+    runs-on: ubuntu-latest
     steps:
       - name: Print greeting
-        run: echo "Hell0 World!"
-      -name Print goodbye
-        run: echo "good bye"
+        run: echo "Hello World!"
+
+      - name: Print goodbye # Fixed indentation here and added a space after the hyphen
+        run: echo "Goodbye"
